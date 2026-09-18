@@ -1,0 +1,235 @@
+{
+  "scenario_id": "GRID-101",
+  "directive_interpretation": [
+    {
+      "note_index": 0,
+      "applies": true,
+      "directive_type": "solar_reduction",
+      "structured_adjustment": {
+        "hours": [
+          13,
+          14
+        ],
+        "factor": 0.2
+      },
+      "explanation": "Solar output reduction applied with remaining usable factor 0.2 for hours [13, 14]."
+    },
+    {
+      "note_index": 1,
+      "applies": true,
+      "directive_type": "no_charge_window",
+      "structured_adjustment": {
+        "hours": [
+          14,
+          15
+        ]
+      },
+      "explanation": "Battery charging is disabled for hours [14, 15]."
+    },
+    {
+      "note_index": 2,
+      "applies": false,
+      "directive_type": "no_op",
+      "structured_adjustment": null,
+      "explanation": "Note refers to general administrative/campus activities and does not impact energy dispatch."
+    }
+  ],
+  "hourly_plan": [
+    {
+      "hour": 0,
+      "grid_kwh": 160.0,
+      "solar_used_kwh": 0.0,
+      "battery_action": "idle",
+      "battery_kwh": 0.0,
+      "battery_energy_after_kwh": 200.0
+    },
+    {
+      "hour": 1,
+      "grid_kwh": 150.0,
+      "solar_used_kwh": 0.0,
+      "battery_action": "idle",
+      "battery_kwh": 0.0,
+      "battery_energy_after_kwh": 200.0
+    },
+    {
+      "hour": 2,
+      "grid_kwh": 140.0,
+      "solar_used_kwh": 0.0,
+      "battery_action": "idle",
+      "battery_kwh": 0.0,
+      "battery_energy_after_kwh": 200.0
+    },
+    {
+      "hour": 3,
+      "grid_kwh": 240.0,
+      "solar_used_kwh": 0.0,
+      "battery_action": "charge",
+      "battery_kwh": 100.0,
+      "battery_energy_after_kwh": 300.0
+    },
+    {
+      "hour": 4,
+      "grid_kwh": 250.0,
+      "solar_used_kwh": 0.0,
+      "battery_action": "charge",
+      "battery_kwh": 100.0,
+      "battery_energy_after_kwh": 400.0
+    },
+    {
+      "hour": 5,
+      "grid_kwh": 270.0,
+      "solar_used_kwh": 0.0,
+      "battery_action": "charge",
+      "battery_kwh": 100.0,
+      "battery_energy_after_kwh": 500.0
+    },
+    {
+      "hour": 6,
+      "grid_kwh": 80.0,
+      "solar_used_kwh": 20.0,
+      "battery_action": "discharge",
+      "battery_kwh": 100.0,
+      "battery_energy_after_kwh": 400.0
+    },
+    {
+      "hour": 7,
+      "grid_kwh": 90.0,
+      "solar_used_kwh": 50.0,
+      "battery_action": "discharge",
+      "battery_kwh": 100.0,
+      "battery_energy_after_kwh": 300.0
+    },
+    {
+      "hour": 8,
+      "grid_kwh": 80.0,
+      "solar_used_kwh": 90.0,
+      "battery_action": "discharge",
+      "battery_kwh": 100.0,
+      "battery_energy_after_kwh": 200.0
+    },
+    {
+      "hour": 9,
+      "grid_kwh": 70.0,
+      "solar_used_kwh": 130.0,
+      "battery_action": "discharge",
+      "battery_kwh": 100.0,
+      "battery_energy_after_kwh": 100.0
+    },
+    {
+      "hour": 10,
+      "grid_kwh": 260.0,
+      "solar_used_kwh": 160.0,
+      "battery_action": "charge",
+      "battery_kwh": 100.0,
+      "battery_energy_after_kwh": 200.0
+    },
+    {
+      "hour": 11,
+      "grid_kwh": 250.0,
+      "solar_used_kwh": 180.0,
+      "battery_action": "charge",
+      "battery_kwh": 100.0,
+      "battery_energy_after_kwh": 300.0
+    },
+    {
+      "hour": 12,
+      "grid_kwh": 225.0,
+      "solar_used_kwh": 185.0,
+      "battery_action": "charge",
+      "battery_kwh": 100.0,
+      "battery_energy_after_kwh": 400.0
+    },
+    {
+      "hour": 13,
+      "grid_kwh": 365.0,
+      "solar_used_kwh": 35.0,
+      "battery_action": "charge",
+      "battery_kwh": 100.0,
+      "battery_energy_after_kwh": 500.0
+    },
+    {
+      "hour": 14,
+      "grid_kwh": 260.0,
+      "solar_used_kwh": 30.0,
+      "battery_action": "idle",
+      "battery_kwh": 0.0,
+      "battery_energy_after_kwh": 500.0
+    },
+    {
+      "hour": 15,
+      "grid_kwh": 160.0,
+      "solar_used_kwh": 120.0,
+      "battery_action": "idle",
+      "battery_kwh": 0.0,
+      "battery_energy_after_kwh": 500.0
+    },
+    {
+      "hour": 16,
+      "grid_kwh": 190.0,
+      "solar_used_kwh": 70.0,
+      "battery_action": "idle",
+      "battery_kwh": 0.0,
+      "battery_energy_after_kwh": 500.0
+    },
+    {
+      "hour": 17,
+      "grid_kwh": 145.0,
+      "solar_used_kwh": 25.0,
+      "battery_action": "discharge",
+      "battery_kwh": 100.0,
+      "battery_energy_after_kwh": 400.0
+    },
+    {
+      "hour": 18,
+      "grid_kwh": 210.0,
+      "solar_used_kwh": 0.0,
+      "battery_action": "discharge",
+      "battery_kwh": 100.0,
+      "battery_energy_after_kwh": 300.0
+    },
+    {
+      "hour": 19,
+      "grid_kwh": 220.0,
+      "solar_used_kwh": 0.0,
+      "battery_action": "discharge",
+      "battery_kwh": 100.0,
+      "battery_energy_after_kwh": 200.0
+    },
+    {
+      "hour": 20,
+      "grid_kwh": 200.0,
+      "solar_used_kwh": 0.0,
+      "battery_action": "discharge",
+      "battery_kwh": 100.0,
+      "battery_energy_after_kwh": 100.0
+    },
+    {
+      "hour": 21,
+      "grid_kwh": 220.0,
+      "solar_used_kwh": 0.0,
+      "battery_action": "discharge",
+      "battery_kwh": 50.0,
+      "battery_energy_after_kwh": 50.0
+    },
+    {
+      "hour": 22,
+      "grid_kwh": 280.0,
+      "solar_used_kwh": 0.0,
+      "battery_action": "charge",
+      "battery_kwh": 50.0,
+      "battery_energy_after_kwh": 100.0
+    },
+    {
+      "hour": 23,
+      "grid_kwh": 290.0,
+      "solar_used_kwh": 0.0,
+      "battery_action": "charge",
+      "battery_kwh": 100.0,
+      "battery_energy_after_kwh": 200.0
+    }
+  ],
+  "total_grid_kwh": 4805.0,
+  "total_cost_bdt": 46645.0,
+  "peak_grid_kwh": 365.0,
+  "plan_summary": "Optimized 24-hour dispatch minimizing total cost to 46645.0 BDT across 4805.0 kWh grid import (peak: 365.0 kWh). Clean rooftop solar supplied 1095.0 kWh. Battery leveraged for price arbitrage with charging at hours [3, 4, 5, 10, 11, 12, 13, 22, 23] and peak-shaving discharge at hours [6, 7, 8, 9, 17, 18, 19, 20, 21]. Operator directives incorporated: Solar reduced by factor 0.2 during hours [13, 14]. Battery charging disabled during hours [14, 15]."
+}
