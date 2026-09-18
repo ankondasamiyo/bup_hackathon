@@ -155,6 +155,14 @@ async def optimize_energy(payload: ScenarioRequest):
     )
 
 
-@app.get("/", include_in_schema=False)
+from fastapi.responses import HTMLResponse
+import os
+
+
+@app.get("/", response_class=HTMLResponse, include_in_schema=False)
 async def root():
-    return {"message": "GridWise LLM Service", "health": "/health", "docs": "/docs"}
+    html_path = os.path.join(os.path.dirname(__file__), "templates", "dashboard.html")
+    if os.path.exists(html_path):
+        with open(html_path, "r", encoding="utf-8") as f:
+            return HTMLResponse(content=f.read())
+    return HTMLResponse(content="<h1>GridWise LLM Service is Running</h1><p><a href='/docs'>Swagger Docs</a></p>")
